@@ -1,0 +1,151 @@
+* {
+    font-family: 'Belanosima', sans-serif;
+}
+
+footer {
+    position: relative;
+    display: block;
+    background-color: #000000;
+    margin: 3px;
+    border-radius: 10px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: black;
+}
+
+button.marginleft {
+    margin-left: 10px;
+    background-color: gray;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.marginleft:hover {
+    background-color: black;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footer-bottom {
+    background-color: #ffffffa7;
+    margin: 1px;
+    text-align: center;
+}
+
+.navbar {
+    background-color: #222244;
+    position: relative;
+    display: flex;
+}
+
+.navbar a {
+    color: #fff;
+    font-size: 1.5em;
+}
+
+body {
+    margin-top: 80px;
+    background-color: rgb(240, 240, 240);
+}
+
+a {
+    color: #fff;
+}
+
+.card {
+    position: relative;
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 20px 0 rgba(255, 4, 4, 0.807);
+}
+
+h1 {
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 40px;
+    background-color: #191970;
+    font-size: 3em;
+    box-sizing: border-box;
+    box-shadow: 2px 2px #ffffff;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: rgb(0, 0, 0);
+}
+
+h2 {
+    text-align: center;
+}
+
+h3,
+h4 {
+    color: #fff;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nosotros p {
+    color: #ffffff;
+    font-size: 1.1em;
+    text-align: justify;
+    padding: 5px;
+    margin-top: 100px;
+}
+
+.nombreFooter {
+    text-align: center;
+}
+
+#fotosRedes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagenLargaNosotros {
+    display: grid;
+    place-items: center;
+}
+
+#logofooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-inner {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+}
