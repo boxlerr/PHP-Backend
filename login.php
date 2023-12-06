@@ -7,38 +7,12 @@ include_once("header.php");
 
 require_once("conect/conect.php");
 
-
-if($con){
-    print "<h1>conexion OK</h1>";
-
-    //guardar los datos de la consulta 
-
-    $consulta = "SELECT idCategoria, categoria FROM categorias";
-
-    $resultado = mysqli_query($con,$consulta);
-
-
-    
-    
-    print "<ul>";
-    while($filas=mysqli_fetch_array($resultado)){
-        
-        print "<li><a href=productos.php?categoria=$filas[idCategoria] >$filas[categoria]</a></li>";
-
-
-    }
-    print "</ul>";
-
-
-
-
-
+?>
+<?php
+if(isset($_GET['ban'])){
+    print "<strong style=color:red > Tu usuario se encuentra BANNEADO. contacta a soporte </strong>";
 
 }
-
-
-
-
 ?>
 
 <form action="registros/login.php" method="post" >
@@ -57,6 +31,13 @@ if($con){
     </fieldset>
 
 </form>
+
+<?php
+if(isset($_GET['error'])){
+    print "<strong style=color:red >El usuario o contraseña son incorrectos   </strong>";
+
+}
+?>
 
 <form action="registros/alta.php" method="post" >
     <fieldset>

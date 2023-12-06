@@ -14,8 +14,21 @@ if($con){
 
    mysqli_query($con,$consulta);
 
-   //completar login 
 
+   if ($filas ['NIVEL'] == 'Admin') {
+    $_SESSION = $filas;
+    header("Location: ../admin/index.php");
+   } else {
+    $_SESSION = $filas;
+    header("Location: ../panel/index.php");
+
+   }
+   if ($filas == NULL) {
+    header ("Location: ../login.php?error=ok");
+   }
+   if ($filas['ESTADO'] == 'banneado') {
+    header("Location ../login.php?ban=ok");
+   }
 
 }
 

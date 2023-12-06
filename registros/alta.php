@@ -17,7 +17,7 @@ if($con){
     mysqli_query($con,$consulta);
 
 
-    header("Location: ../index.php?alta=ok");
+    header("Location: ../login.php?alta=ok");
 
 }
 
