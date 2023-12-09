@@ -87,11 +87,9 @@ a {
 h1 {
     text-align: center;
     border: 1px solid black;
-    border-radius: 40px;
     background-color: #191970;
     font-size: 3em;
     box-sizing: border-box;
-    box-shadow: 2px 2px #ffffff;
     margin-bottom: 15px;
     margin-top: 15px;
     color: rgb(0, 0, 0);
@@ -121,6 +119,10 @@ footer ul {
 
 .nombreFooter {
     text-align: center;
+}
+
+.fondo{
+    background-color: #000000;
 }
 
 #fotosRedes {

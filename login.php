@@ -58,7 +58,6 @@ if(isset($_GET['error'])){
             <label for="ape" >Apellido</label>
             <input id="ape" name="ape" type="text" >
         </div>
-
         <input type="submit" value="Registrate"  >
     </fieldset>
 
@@ -68,7 +67,5 @@ if(isset($_GET['alta'])){
     print "<strong style=color:green >Ya te podes loguear </strong>";
 
 }
-
-
-
+include_once("footer.php");
 ?>

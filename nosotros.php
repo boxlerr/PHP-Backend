@@ -2,7 +2,7 @@
 include_once("header.php");
 ?>
 
-<main>
+<main class="fondo">
     <h1>Nosotros</h1>
 
     <div class="container-fluid">

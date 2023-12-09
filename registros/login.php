@@ -1,5 +1,5 @@
 <?php
-include_once("header.php");
+include_once("../header.php");
 ?>
 <?php
 session_start();
@@ -12,23 +12,24 @@ if($con){
 
     $consulta= "SELECT * FROM usuarios WHERE EMAIL='$usuario' AND CLAVE=MD5('$pass')";
 
-   mysqli_query($con,$consulta);
+$resultado = mysqli_query($con,$consulta);
+$filas = mysqli_fetch_array ($resultado);
 
 
-   if ($filas ['NIVEL'] == 'Admin') {
+if ($filas ['NIVEL'] == 'Admin') {
     $_SESSION = $filas;
     header("Location: ../admin/index.php");
-   } else {
+} else {
     $_SESSION = $filas;
-    header("Location: ../panel/index.php");
+    header("Location: ../index.php");
 
-   }
-   if ($filas == NULL) {
+}
+if ($filas == NULL) {
     header ("Location: ../login.php?error=ok");
-   }
-   if ($filas['ESTADO'] == 'banneado') {
-    header("Location ../login.php?ban=ok");
-   }
+}
+if ($filas['ESTADO'] == 'banneado') {
+    header("Location: ../login.php?ban=ok");
+}
 
 }
 
