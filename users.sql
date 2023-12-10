@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 07-12-2023 a las 01:05:43
+-- Tiempo de generación: 10-12-2023 a las 19:45:55
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.2.4
 
@@ -43,15 +43,9 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`ID`, `NOMBRE`, `APELLIDO`, `EMAIL`, `CLAVE`, `NIVEL`, `FECHA_ALTA`, `ESTADO`) VALUES
-(1, 'Bautista', 'Carloni', 'gr@dv.com', '81dc9bdb52d04dc20036dbd8313ed055', 'Admin', '2014-11-06 21:35:46', 'activo'),
-(2, NULL, NULL, 'facu@dv.net', '81dc9bdb52d04dc20036dbd8313ed055', 'usuario', NULL, 'activo'),
-(3, NULL, NULL, 'facu2@dv.net', '81dc9bdb52d04dc20036dbd8313ed055', 'usuario', '2014-11-06 21:41:12', 'activo'),
-(4, NULL, NULL, 'asdadasd@asdasd', '81dc9bdb52d04dc20036dbd8313ed055', 'usuario', '2014-11-06 21:50:21', 'banneado'),
-(6, NULL, NULL, 'a@email.com', '81dc9bdb52d04dc20036dbd8313ed055', 'usuario', '2014-11-06 22:03:47', 'activo'),
-(7, 'julian', 'boxler', 'boxler@hotmail.com', '031c5d181c40eb0d367a670bb5849b21', 'usuario', '2023-12-06 12:06:16', 'activo'),
-(8, 'asd', 'asd', 'asd@asd', '7815696ecbf1c96e6894b779456d330e', 'usuario', '2023-12-06 12:07:45', 'activo'),
-(9, 'p', 'p', 'p@p', '83878c91171338902e0fe0fb97a8c47a', 'usuario', '2023-12-06 12:17:25', 'activo'),
-(10, 'k', 'k', 'k@k', '8ce4b16b22b58894aa86c421e8759df3', 'usuario', '2023-12-06 12:17:47', 'activo');
+(11, 'usu', 'usu', 'usu@usu', 'cc25dddbb8e44fbd804322fd50d2620f', 'usuario', '2023-12-10 15:43:31', 'activo'),
+(12, 'admin', 'admin', 'admin@admin', '21232f297a57a5a743894a0e4a801fc3', 'Admin', '2023-12-10 15:43:38', 'activo'),
+(13, 'ban', 'ban', 'ban@ban', '4317652e7e08e3edc6d6e607122d7500', 'usuario', '2023-12-10 15:43:44', 'banneado');
 
 --
 -- Índices para tablas volcadas
@@ -72,7 +66,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `ID` int(8) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `ID` int(8) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
