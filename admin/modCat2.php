@@ -16,7 +16,9 @@ if ($con) {
 
         if ($resultado) {
             print "<h1>La categoría fue modificada por $mod</h1>";
-            print "<a href='index.php'>Volver</a>";
+            print "<div class='container mt-5 text-center'> <!-- Utiliza la clase 'text-center' de Bootstrap para centrar horizontalmente -->
+            <a href='index.php' class='btn btn-dark boton-usuario'>Volver</a> <!-- Utiliza la clase 'btn btn-dark' para dar estilo a Bootstrap -->
+        </div>";
         } else {
             print "<h1>Error al modificar la categoría</h1>";
             // Muestra el error de MySQL específico

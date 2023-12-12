@@ -12,7 +12,7 @@ if($con){
     $ape=$_POST['ape'];
 
 
-    $consulta ="INSERT INTO usuarios SET NOMBRE='$nom', APELLIDO='$ape', EMAIL='$usuario', CLAVE=MD5('$pass'), NIVEL='usuario', FECHA_ALTA=NOW()";
+    $consulta ="INSERT INTO usuarios SET NOMBRE='$nom', APELLIDO='$ape', EMAIL='$usuario', CLAVE=MD5('$pass'), NIVEL='usuario'";
 
     mysqli_query($con,$consulta);
 

@@ -20,7 +20,9 @@ if ($con) {
 
         if ($resultado) {
             print "<h1>El auto fue modificado por $nombre</h1>";
-            print "<a href='index.php'>Volver</a>";
+            print "<div class='container mt-5 text-center'> <!-- Utiliza la clase 'text-center' de Bootstrap para centrar horizontalmente -->
+            <a href='index.php' class='btn btn-dark boton-usuario'>Volver</a> <!-- Utiliza la clase 'btn btn-dark' para dar estilo a Bootstrap -->
+        </div>";
         } else {
             print "<h1>Error al modificar el auto</h1>";
             // Muestra el error de MySQL

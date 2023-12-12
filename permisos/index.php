@@ -1,13 +1,25 @@
-<?php include_once("../header.php");; 
-session_start();  
+<?php
+include_once("../admin/header.php");
+?>
+<h1>Logeado!</h1>
+<?php
 
-//si no esta seteado el tipo o no es admin, muestra: 
+session_start();
+if(!isset($_SESSION['NIVEL']) || $_SESSION['NIVEL'] != 'usuario' ){
 
-if(!isset($_SESSION['NIVEL']) || $_SESSION['NIVEL'] != 'USUARIO' ){      
-die("No tenes permisos");  }  
-//si no esta seteada la sesion, te envia al index 
+    die("No tenes permisos");
 
-if(!isset($_SESSION['ID'])){      
-header("Location: ../index.php");  
+}
 
-}else{      var_dump($_SESSION);  }  ?> <a href="../registros/logout.php">Salir</a>
+if(!isset($_SESSION['ID'])){
+    header("Location: ../index.php");
+
+
+}else{
+    var_dump($_SESSION);
+}
+
+?>
+<div class="container mt-5 text-center"> <!-- Utiliza la clase 'text-center' de Bootstrap para centrar horizontalmente -->
+        <a href="../registros/logout.php" class="btn btn-dark boton-usuario">Salir</a> <!-- Utiliza la clase 'btn btn-dark' para dar estilo a Bootstrap -->
+    </div>

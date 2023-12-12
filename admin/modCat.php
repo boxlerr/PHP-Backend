@@ -31,3 +31,6 @@ if ($con) {
     }
 }
 ?>
+<div class="container mt-5 text-center"> <!-- Utiliza la clase 'text-center' de Bootstrap para centrar horizontalmente -->
+        <a href="../admin/index.php" class="btn btn-dark boton-usuario">Volver</a> <!-- Utiliza la clase 'btn btn-dark' para dar estilo a Bootstrap -->
+    </div>
