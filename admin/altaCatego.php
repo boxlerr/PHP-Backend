@@ -36,8 +36,9 @@ if ($con) {
         } else {
             // Mostrar un mensaje si la categoría ya existe
             echo "<h1>La categoría \"$nombreCategoria\" ya existe</h1>";
-            echo "<a href='index.php'>Volver</a>";
-        }
+            print "<div class='container mt-5 text-center'> <!-- Utiliza la clase 'text-center' de Bootstrap para centrar horizontalmente -->
+            <a href='index.php' class='btn btn-dark boton-usuario'>Volver</a> <!-- Utiliza la clase 'btn btn-dark' para dar estilo a Bootstrap -->
+        </div>";        }
     }
 } else {
     // Mostrar un mensaje de error si la conexión a la base de datos falló

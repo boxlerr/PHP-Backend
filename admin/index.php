@@ -7,7 +7,7 @@ require_once("../conect/conect.php");
 ?>
 
 <main class="container mt-5">
-    <h1 class="text-center">Bienvenido al administrador de YATS</h1>
+    <h1 class="text-center">Bienvenido al administrador de YATS "Categorias"</h1>
     <p class="text-center">Agrega autos y modifica sus características</p>
 
     <?php
@@ -109,9 +109,16 @@ require_once("../conect/conect.php");
             </div>
             <input type="submit" value="Agregar Categoría" class="btn btn-success" />
         </form>
+
     <?php endif; ?>
     <p class="text-center">Banea usuarios y desbaneearlos</p>
     
+
+        <?php endif; ?>
+        <div class="container mt-5 text-center"> <!-- Utiliza la clase 'text-center' de Bootstrap para centrar horizontalmente -->
+        <a href="usuario.php" class="btn btn-dark boton-usuario">Usuarios</a> <!-- Utiliza la clase 'btn btn-dark' para dar estilo a Bootstrap -->
+    </div>
+
 </main>
 
 <?php include_once("footer.php"); ?>

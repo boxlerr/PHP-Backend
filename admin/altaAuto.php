@@ -49,7 +49,9 @@ if ($con) {
         if ($resultado) {
             // Mostrar un mensaje de éxito si la consulta fue exitosa
             echo "<h1>El Producto $nombre fue agregado</h1>";
-            echo "<a href='index.php'>Volver</a>";
+            print "<div class='container mt-5 text-center'> <!-- Utiliza la clase 'text-center' de Bootstrap para centrar horizontalmente -->
+            <a href='index.php' class='btn btn-dark boton-usuario'>Volver</a> <!-- Utiliza la clase 'btn btn-dark' para dar estilo a Bootstrap -->
+        </div>";        
         } else {
             // Mostrar un mensaje de error si la consulta falló
             echo "<h1>Error al agregar el producto</h1>";
