@@ -110,6 +110,8 @@ require_once("../conect/conect.php");
             <input type="submit" value="Agregar Categoría" class="btn btn-success" />
         </form>
     <?php endif; ?>
+    <p class="text-center">Banea usuarios y desbaneearlos</p>
+    
 </main>
 
 <?php include_once("footer.php"); ?>
