@@ -1,4 +1,5 @@
 <?php
+require_once ("../registros/admin.php");
 // Incluye el archivo de encabezado
 include_once("header.php");
 // para no entrar por url require_once("../registros/admin.php");

@@ -1,4 +1,5 @@
 <?php
+require_once ("../registros/admin.php");
 include_once("header.php");
 ?>
 <?php

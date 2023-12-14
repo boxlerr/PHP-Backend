@@ -159,3 +159,18 @@ footer ul {
     text-align: center; 
     margin-top: 0px;
 }
+.permiso-denegado {
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    padding: 20px;
+    background-color: #ff0000; 
+    color: white; 
+    font-size: 1.5em;
+    border: 3px solid white; 
+    border-radius: 10px; 
+    text-align: center; 
+    box-shadow: 0 0 105px rgba(0, 0, 0, 0.6); 
+}
+

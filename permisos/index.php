@@ -7,13 +7,10 @@ include_once("../admin/header.php");
 session_start();
 if(!isset($_SESSION['NIVEL']) || $_SESSION['NIVEL'] != 'usuario' ){
 
-    die("No tenes permisos");
-
 }
 
 if(!isset($_SESSION['ID'])){
     header("Location: ../index.php");
-
 
 }else{
     var_dump($_SESSION);
